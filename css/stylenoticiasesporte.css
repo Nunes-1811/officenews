@@ -368,7 +368,9 @@ textarea {
         background-color: transparent;
         border: none;
     }
-
+    body.darkmode h2{
+        color: rgb(0 0 0);
+    }
     .tema {
         width: 40px;
         height: 40px;
