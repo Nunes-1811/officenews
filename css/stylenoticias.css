@@ -257,6 +257,10 @@ button:hover {
     word-break: break-all;
 }
 
+.darkmode section#comentarios h2, .darkmode section#comentarios p {
+    color: #000000;
+}
+
 .usuario {
     font-size: 30px;
 }
