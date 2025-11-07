@@ -1,19 +1,20 @@
-/*Corpo do Site*/
 *{
     padding: 0;
     margin: 0;
 }
+/*➡ Zera as margens e os paddings padrão de todos os elementos para garantir consistência entre navegadores.*/
 body {
     background-color: #f5f7fa;
     font-family: 'Roboto', sans-serif;
     color: #222;
     margin: 0;
 }
-
+/*Define o fundo claro, a fonte principal e a cor base do texto.
+Remove margens extras que o navegador pode aplicar.*/
 div {
     color: black;
 }
-
+/*Força todos os textos dentro de <div> a ficarem pretos*/
 p {
     padding: 50px 0;
     margin: 10px;
@@ -24,7 +25,7 @@ p {
     align-items: flex-start;
     justify-content: space-around;
 }
-
+/*Dá espaçamento vertical grande, usa uma fonte condensada e aplica flexbox para alinhar o conteúdo dentro do parágrafo*/
 h1 {
     font-family: "BBH Sans Hegarty", sans-serif;
     font-weight: 300;
@@ -32,17 +33,17 @@ h1 {
     /* padding: 100px; */
     text-align: center;
 }
+/*h1 usa uma fonte customizada, é centralizado e tem margens amplas (o que cria bastante espaço acima/abaixo).*/
 h2{
      margin: 10px;
 }
-
+/*h2 tem margens pequenas.*/
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
 }
-
-/* Cabeça do Site */
+/*Centraliza o conteúdo e limita sua largura máxima — comum em layouts responsivos.*/
 header {
     background: linear-gradient(to bottom, #1843b8, #00001A);
     color: white;
@@ -52,14 +53,15 @@ header {
     top: 0;
     width: 100%;
 }
-
+/* Cabeça do Site */
+/*Cria um header fixo no topo, com gradiente azul escuro*/
+/* Barra de Navegação */
 header h1 {
     margin: 0;
     font-size: 2px;
     align-items: center;
 }
-
-/* Barra de Navegação */
+/*Cria um header fixo no topo,h1 cria um titulo no header, font-size muda o tamanho da fonte,align-items coloca os texto no centro*/
 nav ul {
     list-style: none;
     padding: 0;
@@ -69,24 +71,23 @@ nav ul {
     gap: 20px;
     color: #00001A;
 }
-
+/**Remove marcadores da lista e organiza os links em linha, centralizados com espaçamento entre eles.*/
 nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
 }
-s
+/*Links brancos e em negrito; sublinham ao passar o mouse.*/
 nav a:hover {
     text-decoration: underline;
 }
-
-/* Modo escuro */
+/*este comando faz com que ao cursor ficar por cima do link sublinhe o mesmo*/
 .dropdown {
     position: relative;
     width: 150px;
     margin-left: auto;
 }
-
+/*Container posicionado relativamente para comportar um menu suspenso*/
 #modoEscuro {
     position: absolute;
     background-color: #f9f9f9;
@@ -98,40 +99,40 @@ nav a:hover {
     bottom: 30px;
     margin: -10px;
 }
-
+/*Define o botão ou área para alternar o modo escuro, com aparência de menu flutuante.*/
 figcaption {
     font-size: 15px;
     font-family: "Caprasimo", serif;
     font-weight: 100;
 }
-
+/*Estiliza legendas de imagens com fonte serifada leve.*/
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
+/*Define variáveis CSS para facilitar alternância entre modo claro e escuro.*/
 :root {
     --background-color: rgb(255, 255, 255);
     --color: rgb(28, 28, 29);
     --background-color-dark: rgb(12, 10, 10);
     --color-dark: rgb(255, 255, 255);
 }
-
+/*Define variáveis CSS para facilitar alternância entre modo claro e escuro.*/
 body.darkmode {
     background-color: var(--background-color-dark);
     color: var(--color-dark);
 }
-
 body.darkmode p,
 body.darkmode h2,
 body.darkmode a,
 body.darkmode figcaption {
     color: var(--color-dark);
 }
-
+/*Quando o body tem a classe .darkmode, troca as cores para modo escuro.
+Aplica-se também a parágrafos, links, subtítulos e legendas.*/
 .modedark {
     color: black;
 }
-
+/*Botão de modo escuro*/
 #modoEscuro {
     padding: 0;
     font-size: medium;
@@ -139,38 +140,36 @@ body.darkmode figcaption {
     color: var(--color);
     background-color: var(--background-color);
 }
-
+/*botao do modo escuro*/
 body {
     background-color: var(--background-color);
     color: var(--color);
     padding: 20px 0;
     transition: background-color 0.5s, color 0.5s;
 }
-
+/*quando clica no butao ele fica no modo escuro*/
 p.modoEscuro {
     color: white;
 }
-
-/*Imagem*/
+/*muda o paragrafo para modo escuro*/
 img {
     width: 200px;
     color: #ffffff;
     font-weight: bold;
 }
-
+/*Define largura padrão de 200px para todas as imagens*/
 .tema {
      width: 70px;
     margin: -10px;
     border-radius: 0px;
     
 }
-
+/*muda a imagem*/
 .informacao {
     width: 500px;
     border-radius: 15px;
 }
-
-/* Rodapé */
+/*caixa de imagem com informaçao*/
 footer {
     background-color: #1843b8;
     color: black;
@@ -178,34 +177,41 @@ footer {
     padding: 200px;
     margin-top: 30px;
 }
-
+/*Rodapé com fundo azul e texto preto*/
 article {
     padding: 30px;
     display: flex;
 }
-
+/*Estrutura os artigos com flexbox e espaçamento interno.*/
 .conteudo {
     align-items: center;
     margin: 10px;
     padding: 10px;
     margin-top: 100px;
 }
+/*align-items: center; → centraliza os itens dentro se o elemento for um container flex (sozinha, não tem efeito).
 
+margin e padding dão espaçamento interno e externo.
+
+margin-top: 100px cria espaço extra no topo (possivelmente para compensar o header fixo).*/
 label {
     font-family: "Open Sans", sans-serif;
     margin-bottom: 10px;
 
 }
-
+/*Define a fonte dos rótulos dos campos de formulário.
+margin-bottom cria um pequeno espaço entre o label e o input.
+hr*/
 hr {
     margin: 80px;
 }
-
+/*Adiciona margens grandes em torno da linha horizontal <hr>.
+Cria espaçamento visual entre seções.*/
 .redes {
     width: 50px;
 }
-
-/*Contato*/
+/*Provavelmente usada para ícones de redes sociais.
+Define uma largura fixa de 50px*/
 #contato {
     max-width: 500px;
     margin: 50px auto;
@@ -213,13 +219,20 @@ hr {
     background: #f8f8f8;
     border-radius: 15px;
 }
+/*max-width: 500px; → impede que fique largo demais.
 
+margin: 50px auto; → centraliza horizontalmente e dá espaçamento vertical.
+
+background e border-radius → fundo claro com cantos arredondados, deixando visual moderno.*/
 .form-contato {
     padding: 20px;
     display: flex;
     flex-direction: column;
 }
+/*O container dos elementos do formulário.
 
+Usa display: flex + flex-direction: column para empilhar os elementos (rótulos, inputs e botões).
+padding adiciona respiro interno.*/
 .form-contato button {
     background-color: #1843b8;
     color: #fff;
@@ -230,17 +243,22 @@ hr {
     transition: 0.3s;
     margin: 10px;
 }
-
+/*Define o botão de envio do formulário:
+Fundo azul, texto branco.
+Bordas arredondadas e sem contorno.
+Margem e padding deixam o botão confortável e clicável.
+transition: 0.3s → suaviza o efeito de hover.*/
 .form-contato button:hover {
     background-color: #0a2b85;
 }
-
+/*Escurece o botão ao passar o mouse — dá feedback visual ao usuário.*/
 input {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
 }
-
+/*Faz os campos de texto preencherem toda a largura do formulário e os deixa arredondados.
+Torna o formulário limpo e moderno.*/
 textarea {
     width: 100%;
     padding: 10px;
@@ -248,7 +266,8 @@ textarea {
     margin-bottom: 10px;
     align-items: center;
 }
-
+/*Igual aos inputs, mas para campos de texto maiores.
+align-items não tem efeito direto aqui (só em elementos flex)*/
 .butao {
     margin: 10px;
     align-items: center;
@@ -256,14 +275,17 @@ textarea {
     display: flex;
     justify-content: center;
 }
+/*Provavelmente o container do botão.
+Usa display: flex para centralizar o botão horizontalmente dentro dele.*/
 .menu-mob {
     display: none;
 }
 .menu-desk {
     display: block;
 }
-
-@media screen and (max-width: 768px) {   
+/*o modo desktop, o menu de desktop aparece (display: block).
+O menu de celular (menu-mob) fica escondido (display: none).*/
+@media screen and (max-width: 768px)/*Tudo dentro desse bloco só se aplica em telas menores que 768px (smartphones e tablets).*/ {   
     #modoEscuro {
         width: 40px;
         height: 40px;
@@ -276,19 +298,23 @@ textarea {
         width: 50%;
         background-color: transparent;
         border: none;
-    }
+    }/*Ajusta o botão de modo escuro para um ícone circular pequeno.
+Centraliza o ícone dentro.
+Remove a posição absoluta usada no desktop (position: unset).
+Torna o fundo transparente.*/
     .tema{
         width: 40px;
         height: 40px;
         border-radius: 100%;
-    } 
+    } /*Provavelmente o ícone de tema (sol/lua) — reduzido e circular no mobile.*/
     header{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;        
         align-items: center;
         justify-content: center;
-    }
+    }/*Header se organiza em linha e se ajusta ao espaço, permitindo quebra para nova linha se necessário.
+Garante que logotipo e menu fiquem bem distribuídos em telas pequenas.*/
     header img {
         width: auto;
         height: 75px;
@@ -296,7 +322,7 @@ textarea {
     header .menu-mob img{
         width: 50px;
         height: 50px;
-    }
+    }/*Define tamanhos diferentes para logo e ícones do menu no modo mobile.*/
     .menu {
         flex-direction: column;
     }
@@ -311,7 +337,8 @@ textarea {
         display: block;
         margin: 0;
         width: 50%;
-    }
+    }/*O menu principal muda para coluna vertical (um item por linha).
+O menu desktop é escondido e o menu mobile é exibido.*/
     .dropdown {
         position: relative;
     }
@@ -325,7 +352,9 @@ textarea {
     }
     .dropdown:hover .dropdown-content {
         display: block;
-    }
+    }/*Cria menus suspensos:
+Quando o usuário passa o mouse em .dropdown, o .dropdown-content aparece.
+Posição absoluta faz o submenu se sobrepor ao conteúdo.*/
     .noticia {
         max-width: 100%;
         flex-direction: column;
@@ -339,7 +368,7 @@ textarea {
     img {
         width: 100%;
         height: auto;
-    }
+    }/*Garante que notícias e imagens se empilhem verticalmente e ocupem a largura total da tela.*/
     main{
         margin: 150px 0;
     }
@@ -369,5 +398,7 @@ textarea {
     nav a{
         color: #00001A;
     }
-
+/*Reduz margens e paddings para caber melhor em telas pequenas.
+Troca cor dos links (nav a) para azul-escuro (melhor contraste sobre fundo claro).
+Ajusta imagens, textos e espaçamentos para evitar quebras.*/
 }
