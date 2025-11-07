@@ -263,6 +263,13 @@ button:hover {
     color: #333;
 }
 
+.menu-mob {
+    display: none;
+}
+.menu-desk {
+    display: block;
+}
+
 @media screen and (max-width: 768px) {
     #modoEscuro {
         width: 40px;
@@ -360,5 +367,8 @@ button:hover {
     article p {
     padding: 20px;
     margin: 0;
+    }
+    nav a{
+        color: #00001A;
     }
 }
