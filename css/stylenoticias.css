@@ -131,6 +131,7 @@ body.darkmode h2,
 body.darkmode a,
 body.darkmode figcaption {
     color: var(--color-dark);
+    color: #00001A;
     
 }
 
