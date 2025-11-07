@@ -1,17 +1,17 @@
-.ImgPrinc{
+.ImgPrinc {
     border-radius: 20px;
     width: 950px;
     height: 600px;
     padding: 150px;
 }
 
-.ImgSec{
+.ImgSec {
     border-radius: 20px;
     width: 500px;
     height: 300px;
 }
 
-.furtos{
+.furtos {
     border-radius: 20px;
     width: 600px;
     height: 500px;
@@ -35,13 +35,15 @@ h3 {
     font-size: 20px;
 }
 
-p,h2, h3 {
+p,
+h2,
+h3 {
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 100px;
     padding-right: 100px;
 }
 
-article{
+article {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,7 +51,7 @@ article{
 }
 
 Header {
-       background: linear-gradient(to bottom, #1843b8, #00001A);
+    background: linear-gradient(to bottom, #1843b8, #00001A);
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -98,61 +100,76 @@ nav a:hover {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
     right: 50px;
-     bottom: 30px;
+    bottom: 30px;
     margin: -10px;
 }
-figcaption{
+
+figcaption {
     font-size: large;
     font-family: "Caprasimo", serif;
     font-weight: 100;
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
-:root{
+
+:root {
     --background-color: rgb(255, 255, 255);
     --color: rgb(28, 28, 29);
     --background-color-dark: rgb(12, 10, 10);
     --color-dark: rgb(255, 255, 255);
 }
-body.darkmode{
+
+body.darkmode {
     background-color: var(--background-color-dark);
     color: var(--color-dark);
 }
-body.darkmode p, body.darkmode h2, body.darkmode a, body.darkmode figcaption{
+
+body.darkmode p,
+body.darkmode h2,
+body.darkmode a,
+body.darkmode figcaption {
     color: var(--color-dark);
 }
-.modedark{
+
+.modedark {
     color: black;
 }
-#modoEscuro{
+
+#modoEscuro {
     padding: 0;
     font-size: medium;
     cursor: pointer;
     color: var(--color);
     background-color: var(--background-color);
 }
-body{
+
+body {
     background-color: var(--background-color);
     color: var(--color);
     padding: 20px 0;
     transition: background-color 0.5s, color 0.5s;
     margin: 0;
 }
-p.modoEscuro{
+
+p.modoEscuro {
     color: white;
 }
+
 /*Imagem*/
 img {
     width: 200px;
     color: #ffffff;
     font-weight: bold;
 }
-.tema{
-    width: 70px;    
-    border-radius: 10px;    
+
+.tema {
+    width: 70px;
+    border-radius: 10px;
 }
-.informacao{
+
+.informacao {
     width: 500px;
     border-radius: 15px;
 }
@@ -163,14 +180,14 @@ img {
     font-weight: bold;
 }
 
-#formulario-comentario{
+#formulario-comentario {
     display: flex;
     flex-direction: column;
     justify-content: 10px;
     align-items: center;
 }
 
-#nome{
+#nome {
     background-color: antiquewhite;
     border-width: 3px;
     border-radius: 5px;
@@ -178,68 +195,170 @@ img {
     width: 100%;
 }
 
-#mensagem{
+#mensagem {
     background-color: antiquewhite;
     border-width: 3px;
     border-radius: 5px;
     height: 40px;
     width: 100%;
 }
-  section {
+
+section {
     margin: 20px auto;
     width: 90%;
     max-width: 600px;
     background: white;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
 
-  form {
+form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
+}
 
-  input, textarea, button {
+input,
+textarea,
+button {
     padding: 10px;
     font-size: 16px;
     border-radius: 8px;
     border: 1px solid #ccc;
-  }
+}
 
-  button {
+button {
     background-color: #007bff;
     color: white;
     border: none;
     cursor: pointer;
-  }
+}
 
-  button:hover {
+button:hover {
     background-color: #0056b3;
-  }
+}
 
-  .erro {
+.erro {
     color: red;
     margin-bottom: 10px;
-  }
+}
 
-  .comentario {
+.comentario {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f1f1f1;
-    border-radius: 8px; 
+    border-radius: 8px;
     padding: 10px;
     margin-bottom: 10px;
     text-align: center;
     width: auto;
     word-break: break-all;
-  }
-
-  .usuario{
-    font-size: 30px;
-  }
-
-  .comentario strong {
-    color: #333;  
 }
 
+.usuario {
+    font-size: 30px;
+}
+
+.comentario strong {
+    color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    #modoEscuro {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: unset;
+        margin-left: auto;
+        width: 50%;
+        background-color: transparent;
+        border: none;
+    }
+
+    .tema {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header img {
+        width: auto;
+        height: 75px;
+    }
+
+    header .menu-mob img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-desk {
+        display: none;
+    }
+
+    .menu-mob {
+        display: block;
+        margin: 0;
+        width: 50%;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 130px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    footer img:not(.redes) {
+        height: 75px;
+        width: auto;
+    }
+
+    article h1 {
+        padding: 150px 0 0 0;
+        margin: 100px 20px 0 20px;
+    }
+
+    .ImgPrinc {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+    }
+    article p {
+    padding: 20px;
+    margin: 0;
+    }
+}
