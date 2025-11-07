@@ -131,6 +131,7 @@ body.darkmode h2,
 body.darkmode a,
 body.darkmode figcaption {
     color: var(--color-dark);
+    
 }
 
 .modedark {
@@ -291,7 +292,9 @@ footer {
         background-color: transparent;
         border: none;
     }
-
+    body.darkmode h2{
+        color: rgb(0 0 0);
+    }
     .tema {
         width: 40px;
         height: 40px;
