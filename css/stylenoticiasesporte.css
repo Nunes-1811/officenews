@@ -262,13 +262,42 @@ button:hover {
 .comentario strong {
     color: #333;
 }
+/* Rodapé */
 footer {
-    background-color: #d10f0f;
+    background-color: #b81818;
     color: black;
     text-align: center;
     padding: 200px;
     margin-top: 30px;
 }
+
+article {
+    padding: 30px;
+    display: flex;
+}
+
+.conteudo {
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+label {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 10px;
+
+}
+
+hr {
+    margin: 80px;
+}
+
+.redes {
+    width: 50px;
+}
+
+/*Contato*/
 #contato {
     max-width: 500px;
     margin: 50px auto;
@@ -284,7 +313,7 @@ footer {
 }
 
 .form-contato button {
-    background-color: #c71313;
+    background-color: #b81818;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -295,7 +324,7 @@ footer {
 }
 
 .form-contato button:hover {
-    background-color: #850a0abe;
+    background-color: #850a0aa4;
 }
 
 input {
@@ -325,7 +354,6 @@ textarea {
 .menu-desk {
     display: block;
 }
-
 @media screen and (max-width: 768px) {
     #modoEscuro {
         width: 40px;
