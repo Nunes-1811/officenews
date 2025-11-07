@@ -262,7 +262,63 @@ button:hover {
 .comentario strong {
     color: #333;
 }
+footer {
+    background-color: #b81818;
+    color: black;
+    text-align: center;
+    padding: 200px;
+    margin-top: 30px;
+}
+#contato {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 15px;
+}
 
+.form-contato {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contato button {
+    background-color: #b81818;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+.form-contato button:hover {
+    background-color: #850a0aa4;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.butao {
+    margin: 10px;
+    align-items: center;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
 .menu-mob {
     display: none;
 }
