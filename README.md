@@ -29,3 +29,11 @@
 * 1-Baixe o repositório (Clique no botão "Code" Download Zip)
 * 2-Extraia a pasta
 * 3-Abra o arquivo index.html no navegador
+
+---
+
+## Melhorias Futuras
+* Melhorar o botão do modo escuro
+* Responsividade em todas as paginas
+* Atualização no visual da pagina
+* 
