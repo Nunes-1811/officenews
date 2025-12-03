@@ -36,4 +36,17 @@
 * Melhorar o botão do modo escuro
 * Responsividade em todas as paginas
 * Atualização no visual da pagina
-* 
+
+---
+
+## Aprendizagem
+- Aprendemos a usar o java para que fazer os comentarios do site
+- A fazer o modo escuro
+- E usar de melhor forma o Css
+
+---
+
+## Autores
+* Kaio César, Kaio Nogueira, Ismael Menezes e Gustavo Bryan
+* Turma de Tecnologia em Informática para internet (Turno da turma) – Senac DF
+
