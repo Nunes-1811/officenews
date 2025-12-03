@@ -14,11 +14,15 @@
 * Selecionamento de paginas sobre as noticias
 * Mundança de cor para a pagina de esportes
 
+---
+
 ## 🖥️Tecnologias ultilizadas
 - HTML
 - CSS
 - JavaScript
 - GIT e Github
 - VS code
+
+---
 
 ## ❓Como rodar?
