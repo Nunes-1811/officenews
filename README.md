@@ -26,3 +26,6 @@
 ---
 
 ## ❓Como rodar?
+* 1-Baixe o repositório (Clique no botão "Code" Download Zip)
+* 2-Extraia a pasta
+* 3-Abra o arquivo index.html no navegador
